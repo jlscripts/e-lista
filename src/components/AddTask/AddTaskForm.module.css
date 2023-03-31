@@ -1,0 +1,94 @@
+.container {
+  padding: 0 5rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.taskName {
+  grid-column: 1/3;
+}
+
+.taskNotes {
+  grid-column: 1/3;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+option {
+  font-size: 1rem;
+}
+
+.taskNotesInput,
+.taskNameInput {
+  width: 100%;
+  padding: 0.3rem;
+  border: 0.1rem solid var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+.taskNotesInput {
+  height: 50px;
+}
+
+.deadline,
+.category {
+  margin-right: 1rem;
+}
+
+.formBtns {
+  grid-column: 2/3;
+  justify-self: end;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.addTaskBtn,
+.cancelBtn {
+  font-style: inherit;
+  font-weight: bold;
+  border: 0.1rem solid var(--secondary-color);
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.addTaskBtn {
+  background-color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.addTaskBtn:hover,
+.addTaskBtn:active {
+  filter: brightness(110%);
+  transition: all 0.3s;
+}
+
+.cancelBtn {
+  background-color: white;
+  font-size: 1rem;
+}
+
+.cancelBtn:hover,
+.cancelBtn:active {
+  background-color: var(--tertiary-color);
+  transition: all 0.3s;
+}
+
+.invalid {
+  background-color: #fecaca;
+}
+
+.levelOfPriority {
+  justify-self: end;
+}

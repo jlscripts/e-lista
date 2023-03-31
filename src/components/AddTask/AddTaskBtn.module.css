@@ -1,0 +1,18 @@
+.addTaskBtn {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+}
+
+.addTaskBtn:hover,
+.addTaskBtn:active {
+  filter: brightness(110%);
+  transition: all 0.3s;
+}
